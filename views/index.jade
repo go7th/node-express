@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  if !show
+    a(href="/login") 登陆&nbsp;&nbsp;&nbsp;&nbsp;
+    a(href="/reg") 注册
+  else
+    a(href="/logout") 退出登录

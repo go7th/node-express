@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1 登陆界面
+  div.form
+    form(action="/loginyz", method="post")
+        li
+            span.name 用户名:
+            input(
+                type="text"
+                name="user"
+            )
+        li
+            span.name 密码:
+            input(
+                type="text"
+                name="pass"
+            )
+        li
+            input(
+                type="submit"
+                val="登陆"
+            )
